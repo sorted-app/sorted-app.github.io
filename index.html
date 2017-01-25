@@ -32,15 +32,15 @@
         //document loaded
         $.when(
           // Get the HTML
-            $.get("http://codepen.io/raman-ch/pen/"+codePenProjectId+".html", function(html) {
+            $.get("https://codepen.io/raman-ch/pen/"+codePenProjectId+".html", function(html) {
               globalStore.html = html;
             }),
             // Get the CSS
-            $.get("http://codepen.io/raman-ch/pen/"+codePenProjectId+".css", function(css) {
+            $.get("https://codepen.io/raman-ch/pen/"+codePenProjectId+".css", function(css) {
               globalStore.css = css;
             }),
             // Get the JS
-            $.get("http://codepen.io/raman-ch/pen/"+codePenProjectId+".js",function(js){
+            $.get("https://codepen.io/raman-ch/pen/"+codePenProjectId+".js",function(js){
               globalStore.js = js;
             })
           ).then(function() {
