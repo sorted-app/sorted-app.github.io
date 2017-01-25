@@ -44,7 +44,6 @@
               globalStore.js = js;
             })
           ).then(function() {
-            console.log(globalStore);
             // Add Res to page
             $("body").html(globalStore.html);
             $("<style />").html(globalStore.css).appendTo("head");
